@@ -1,16 +1,18 @@
 import math
+import os
 
 
 def menuMain():
-    print("A Simple Night Crows Profit Analyzer ")
-    print("1 - Morion")
+    os.system("cls")
+    print("A Simple Night Crows Profit Analyzer by Xhenoa ")
+    print("\n\n1 - Morion")
     print("2 - Papyrus")
     print("3 - Gear")
     print("4 - Promote")
     print("5 - Feather")
     print("6 - Tear")
     print("7 - Exit")
-    userInput = input("Choose an Option: ")
+    userInput = input("\nChoose an Option: ")
 
     if userInput == '1':
         calculateMorion()
@@ -31,7 +33,8 @@ def menuMain():
 
 
 def calculateMorion():
-    print("\n\nMORION CALCULATOR")
+    os.system("cls")
+    print("MORION CALCULATOR")
     userCrow = float(input("\n\nYour CROW Token: "))
     marketPMorion = float(input("MORION Buy Price: "))
     gamePMorion = float(input("Morion In-Game Price: "))
@@ -48,17 +51,17 @@ def calculateMorion():
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("MORION Token Amount:", math.floor(resultMorion))
-    print("No Auction Fee Diamond:", resultNCDiamond, "Diamond")
+    print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
-    print("Diamond with Auction Fee:", resultMCDiamond, "Diamond")
+    print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
     print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
     print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", resultPCTProfit, '%')
+    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
     print("3 - Exit Application")
-    userInput = input("Choose an Option: ")
+    userInput = input("\nChoose an Option: ")
 
     if userInput == '1':
         calculateMorion()
@@ -66,10 +69,13 @@ def calculateMorion():
         menuMain()
     elif userInput == '3':
         return
+    else:
+        menuMain()
 
 
 def calculatePapyrus():
-    print("\n\nPAPYRUS CALCULATOR")
+    os.system("cls")
+    print("PAPYRUS CALCULATOR")
     userCrow = float(input("\n\nYour CROW Token: "))
     marketPPapyrus = float(input("PAPYRUS Buy Price: "))
     gamePPapyrus = float(input("Papyrus In-Game Price: "))
@@ -86,17 +92,17 @@ def calculatePapyrus():
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("PAPYRUS Token Amount:", math.floor(resultPapyrus))
-    print("No Auction Fee Diamond:", resultNCDiamond, "Diamond")
+    print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
-    print("Diamond with Auction Fee:", resultMCDiamond, "Diamond")
+    print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
     print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
     print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", resultPCTProfit, '%')
+    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
     print("3 - Exit Application")
-    userInput = input("Choose an Option: ")
+    userInput = input("\nChoose an Option: ")
 
     if userInput == '1':
         calculatePapyrus()
@@ -104,10 +110,13 @@ def calculatePapyrus():
         menuMain()
     elif userInput == '3':
         return
+    else:
+        menuMain()
 
 
 def calculateGear():
-    print("\n\nGEAR CALCULATOR")
+    os.system("cls")
+    print("GEAR CALCULATOR")
     userCrow = float(input("\n\nYour CROW Token: "))
     marketPGear = float(input("GEAR Buy Price: "))
     gamePGear = float(input("Meticulous Aircraft Component In-Game Price: "))
@@ -124,17 +133,17 @@ def calculateGear():
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("GEAR Token Amount:", math.floor(resultGear))
-    print("No Auction Fee Diamond:", resultNCDiamond, "Diamond")
+    print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
-    print("Diamond with Auction Fee:", resultMCDiamond, "Diamond")
+    print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
     print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
     print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", resultPCTProfit, '%')
+    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
     print("3 - Exit Application")
-    userInput = input("Choose an Option: ")
+    userInput = input("\nChoose an Option: ")
 
     if userInput == '1':
         calculateGear()
@@ -142,10 +151,13 @@ def calculateGear():
         menuMain()
     elif userInput == '3':
         return
+    else:
+        menuMain()
 
 
 def calculatePromote():
-    print("\n\nPROMOTE CALCULATOR")
+    os.system("cls")
+    print("PROMOTE CALCULATOR")
     userCrow = float(input("\n\nYour CROW Token: "))
     marketPPromote = float(input("PROMOTE Buy Price: "))
     gamePPromote = float(input("Higher Seal of Advancement In-Game Price: "))
@@ -162,17 +174,17 @@ def calculatePromote():
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("PROMOTE Token Amount:", math.floor(resultPromote))
-    print("No Auction Fee Diamond:", resultNCDiamond, "Diamond")
+    print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
-    print("Diamond with Auction Fee:", resultMCDiamond, "Diamond")
+    print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
     print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
     print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", resultPCTProfit, '%')
+    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
     print("3 - Exit Application")
-    userInput = input("Choose an Option: ")
+    userInput = input("\nChoose an Option: ")
 
     if userInput == '1':
         calculatePromote()
@@ -180,10 +192,13 @@ def calculatePromote():
         menuMain()
     elif userInput == '3':
         return
+    else:
+        menuMain()
 
 
 def calculateFeather():
-    print("\n\nFEATHER CALCULATOR")
+    os.system("cls")
+    print("FEATHER CALCULATOR")
     userCrow = float(input("\n\nYour CROW Token: "))
     marketPFeather = float(input("FEATHER Buy Price: "))
     gamePFeather = float(input("Piece of the Sky In-Game Price: "))
@@ -200,17 +215,17 @@ def calculateFeather():
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("FEATHER Token Amount:", math.floor(resultFeather))
-    print("No Auction Fee Diamond:", resultNCDiamond, "Diamond")
+    print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
-    print("Diamond with Auction Fee:", resultMCDiamond, "Diamond")
+    print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
     print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
     print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", resultPCTProfit, '%')
+    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
     print("3 - Exit Application")
-    userInput = input("Choose an Option: ")
+    userInput = input("\nChoose an Option: ")
 
     if userInput == '1':
         calculateFeather()
@@ -218,10 +233,13 @@ def calculateFeather():
         menuMain()
     elif userInput == '3':
         return
+    else:
+        menuMain()
 
 
 def calculateTear():
-    print("\n\nTEAR CALCULATOR")
+    os.system("cls")
+    print("TEAR CALCULATOR")
     userCrow = float(input("\n\nYour CROW Token: "))
     marketPTear = float(input("TEAR Buy Price: "))
     gamePTear = float(input("Frozen Tear In-Game Price: "))
@@ -238,17 +256,17 @@ def calculateTear():
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("TEAR Token Amount:", math.floor(resultTear))
-    print("No Auction Fee Diamond:", resultNCDiamond, "Diamond")
+    print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
-    print("Diamond with Auction Fee:", resultMCDiamond, "Diamond")
+    print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
     print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
     print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", resultPCTProfit, '%')
+    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
     print("3 - Exit Application")
-    userInput = input("Choose an Option: ")
+    userInput = input("\nChoose an Option: ")
 
     if userInput == '1':
         calculateTear()
@@ -256,6 +274,8 @@ def calculateTear():
         menuMain()
     elif userInput == '3':
         return
+    else:
+        menuMain()
 
 
 if __name__ == '__main__':
