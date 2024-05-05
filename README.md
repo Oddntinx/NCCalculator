@@ -3,7 +3,7 @@ A Simple Night Crows Calculator written in Python!
 
 This automates all computations that you might need and shows results with only 3 inputs from the user
 
-You can copy and paste the source code in a Web Compiler if you don't want to run the .EXE file in your Computer
+You can copy and paste the source code in a Web Compiler if you don't want to run the .EXE file in your Computer (https://www.programiz.com/python-programming/online-compiler/)
 
 I'll consider making a proper GUI soon (not sure when)
 
