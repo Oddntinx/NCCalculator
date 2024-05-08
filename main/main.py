@@ -46,18 +46,33 @@ def calculateMorion():
     resultNCDiamond = gameAmtMorion * gamePMorion
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPDiamond = resultMCDiamond - (userCrow * 84)
+    resultAltPDiamond = 0.0
+    if resultMCDiamond <= 8400:
+        resultPDiamond = resultMCDiamond - math.floor((userACrow * 84))
+    else:
+        resultPDiamond = resultMCDiamond - 8400
+        resultAltPDiamond = resultMCDiamond - math.floor((userACrow * 84))
     resultPCrow = resultPDiamond / 84
+    resultAltPCrow = resultAltPDiamond / 84
     resultPCTProfit = (resultPCrow / userACrow) * 100
+    resultAltPCTProfit = (resultAltPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("MORION Token Amount:", math.floor(resultMorion))
     print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
     print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
-    print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
-    print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    if resultMCDiamond <= 8400:
+        print("Diamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    else:
+        print("\nDiamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCTProfit * 100) / 100.0, '%')
+        print("\nDiamond Profit @ MAX CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @ MAX Crow Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @ MAX Crow Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
@@ -87,18 +102,33 @@ def calculatePapyrus():
     resultNCDiamond = gameAmtPapyrus * gamePPapyrus
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPDiamond = resultMCDiamond - (userCrow * 84)
+    resultAltPDiamond = 0.0
+    if resultMCDiamond <= 8400:
+        resultPDiamond = resultMCDiamond - math.floor((userACrow * 84))
+    else:
+        resultPDiamond = resultMCDiamond - 8400
+        resultAltPDiamond = resultMCDiamond - math.floor((userACrow * 84))
     resultPCrow = resultPDiamond / 84
+    resultAltPCrow = resultAltPDiamond / 84
     resultPCTProfit = (resultPCrow / userACrow) * 100
+    resultAltPCTProfit = (resultAltPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("PAPYRUS Token Amount:", math.floor(resultPapyrus))
     print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
     print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
-    print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
-    print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    if resultMCDiamond <= 8400:
+        print("Diamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    else:
+        print("\nDiamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCTProfit * 100) / 100.0, '%')
+        print("\nDiamond Profit @ MAX CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @ MAX Crow Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @ MAX Crow Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
@@ -128,18 +158,33 @@ def calculateGear():
     resultNCDiamond = gameAmtGear * gamePGear
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPDiamond = resultMCDiamond - (userCrow * 84)
+    resultAltPDiamond = 0.0
+    if resultMCDiamond <= 8400:
+        resultPDiamond = resultMCDiamond - math.floor((userACrow * 84))
+    else:
+        resultPDiamond = resultMCDiamond - 8400
+        resultAltPDiamond = resultMCDiamond - math.floor((userACrow * 84))
     resultPCrow = resultPDiamond / 84
+    resultAltPCrow = resultAltPDiamond / 84
     resultPCTProfit = (resultPCrow / userACrow) * 100
+    resultAltPCTProfit = (resultAltPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("GEAR Token Amount:", math.floor(resultGear))
     print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
     print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
-    print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
-    print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    if resultMCDiamond <= 8400:
+        print("Diamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    else:
+        print("\nDiamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCTProfit * 100) / 100.0, '%')
+        print("\nDiamond Profit @ MAX CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @ MAX Crow Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @ MAX Crow Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
@@ -169,18 +214,33 @@ def calculatePromote():
     resultNCDiamond = gameAmtPromote * gamePPromote
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPDiamond = resultMCDiamond - (userCrow * 84)
+    resultAltPDiamond = 0.0
+    if resultMCDiamond <= 8400:
+        resultPDiamond = resultMCDiamond - math.floor((userACrow * 84))
+    else:
+        resultPDiamond = resultMCDiamond - 8400
+        resultAltPDiamond = resultMCDiamond - math.floor((userACrow * 84))
     resultPCrow = resultPDiamond / 84
+    resultAltPCrow = resultAltPDiamond / 84
     resultPCTProfit = (resultPCrow / userACrow) * 100
+    resultAltPCTProfit = (resultAltPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("PROMOTE Token Amount:", math.floor(resultPromote))
     print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
     print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
-    print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
-    print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    if resultMCDiamond <= 8400:
+        print("Diamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    else:
+        print("\nDiamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCTProfit * 100) / 100.0, '%')
+        print("\nDiamond Profit @ MAX CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @ MAX Crow Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @ MAX Crow Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
@@ -210,18 +270,33 @@ def calculateFeather():
     resultNCDiamond = gameAmtFeather * gamePFeather
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPDiamond = resultMCDiamond - (userCrow * 84)
+    resultAltPDiamond = 0.0
+    if resultMCDiamond <= 8400:
+        resultPDiamond = resultMCDiamond - math.floor((userACrow * 84))
+    else:
+        resultPDiamond = resultMCDiamond - 8400
+        resultAltPDiamond = resultMCDiamond - math.floor((userACrow * 84))
     resultPCrow = resultPDiamond / 84
+    resultAltPCrow = resultAltPDiamond / 84
     resultPCTProfit = (resultPCrow / userACrow) * 100
+    resultAltPCTProfit = (resultAltPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("FEATHER Token Amount:", math.floor(resultFeather))
     print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
     print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
-    print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
-    print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    if resultMCDiamond <= 8400:
+        print("Diamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    else:
+        print("\nDiamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCTProfit * 100) / 100.0, '%')
+        print("\nDiamond Profit @ MAX CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @ MAX Crow Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @ MAX Crow Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
@@ -251,18 +326,33 @@ def calculateTear():
     resultNCDiamond = gameAmtTear * gamePTear
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPDiamond = resultMCDiamond - (userCrow * 84)
+    resultAltPDiamond = 0.0
+    if resultMCDiamond <= 8400:
+        resultPDiamond = resultMCDiamond - math.floor((userACrow * 84))
+    else:
+        resultPDiamond = resultMCDiamond - 8400
+        resultAltPDiamond = resultMCDiamond - math.floor((userACrow * 84))
     resultPCrow = resultPDiamond / 84
+    resultAltPCrow = resultAltPDiamond / 84
     resultPCTProfit = (resultPCrow / userACrow) * 100
+    resultAltPCTProfit = (resultAltPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("TEAR Token Amount:", math.floor(resultTear))
     print("No Auction Fee Diamond:", math.floor(resultNCDiamond), "Diamond")
     print("5% Auction Fee:", gameCDiamond, "Diamond")
     print("Diamond with Auction Fee:", math.floor(resultMCDiamond), "Diamond")
-    print("Diamond Profit:", math.floor(resultPDiamond), "Diamond")
-    print("Diamond to CROW Profit:", math.floor(resultPCrow), "CROW")
-    print("Percent Profit:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    if resultMCDiamond <= 8400:
+        print("Diamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
+    else:
+        print("\nDiamond Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPDiamond), "Diamond")
+        print("Diamond to CROW Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCrow), "CROW")
+        print("Percent Profit @", math.floor(userACrow), "CROW Mint:", math.floor(resultAltPCTProfit * 100) / 100.0, '%')
+        print("\nDiamond Profit @ MAX CROW Mint:", math.floor(resultPDiamond), "Diamond")
+        print("Diamond to CROW Profit @ MAX Crow Mint:", math.floor(resultPCrow), "CROW")
+        print("Percent Profit @ MAX Crow Mint:", math.floor(resultPCTProfit * 100) / 100.0, '%')
 
     print("\n\n1 - New Calculation")
     print("2 - Back to Main Menu")
