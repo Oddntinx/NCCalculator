@@ -30,6 +30,7 @@ def menuMain():
         return
     else:
         print("Feature not Implemented Yet / Invalid Input")
+        menuMain()
 
 
 def calculateMorion():
@@ -45,9 +46,9 @@ def calculateMorion():
     resultNCDiamond = gameAmtMorion * gamePMorion
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPCTProfit = ((resultMCDiamond - (userACrow * 84)) / resultMCDiamond) * 100
-    resultPDiamond = resultMCDiamond - (userACrow * 84)
+    resultPDiamond = resultMCDiamond - (userCrow * 84)
     resultPCrow = resultPDiamond / 84
+    resultPCTProfit = (resultPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("MORION Token Amount:", math.floor(resultMorion))
@@ -86,9 +87,9 @@ def calculatePapyrus():
     resultNCDiamond = gameAmtPapyrus * gamePPapyrus
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPCTProfit = ((resultMCDiamond - (userACrow * 84)) / resultMCDiamond) * 100
-    resultPDiamond = resultMCDiamond - (userACrow * 84)
+    resultPDiamond = resultMCDiamond - (userCrow * 84)
     resultPCrow = resultPDiamond / 84
+    resultPCTProfit = (resultPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("PAPYRUS Token Amount:", math.floor(resultPapyrus))
@@ -127,9 +128,9 @@ def calculateGear():
     resultNCDiamond = gameAmtGear * gamePGear
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPCTProfit = ((resultMCDiamond - (userACrow * 84)) / resultMCDiamond) * 100
-    resultPDiamond = resultMCDiamond - (userACrow * 84)
+    resultPDiamond = resultMCDiamond - (userCrow * 84)
     resultPCrow = resultPDiamond / 84
+    resultPCTProfit = (resultPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("GEAR Token Amount:", math.floor(resultGear))
@@ -168,9 +169,9 @@ def calculatePromote():
     resultNCDiamond = gameAmtPromote * gamePPromote
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPCTProfit = ((resultMCDiamond - (userACrow * 84)) / resultMCDiamond) * 100
-    resultPDiamond = resultMCDiamond - (userACrow * 84)
+    resultPDiamond = resultMCDiamond - (userCrow * 84)
     resultPCrow = resultPDiamond / 84
+    resultPCTProfit = (resultPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("PROMOTE Token Amount:", math.floor(resultPromote))
@@ -209,9 +210,9 @@ def calculateFeather():
     resultNCDiamond = gameAmtFeather * gamePFeather
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPCTProfit = ((resultMCDiamond - (userACrow * 84)) / resultMCDiamond) * 100
-    resultPDiamond = resultMCDiamond - (userACrow * 84)
+    resultPDiamond = resultMCDiamond - (userCrow * 84)
     resultPCrow = resultPDiamond / 84
+    resultPCTProfit = (resultPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("FEATHER Token Amount:", math.floor(resultFeather))
@@ -250,9 +251,9 @@ def calculateTear():
     resultNCDiamond = gameAmtTear * gamePTear
     gameCDiamond = math.floor(resultNCDiamond * 0.05)
     resultMCDiamond = resultNCDiamond - math.floor(resultNCDiamond * 0.05)
-    resultPCTProfit = ((resultMCDiamond - (userACrow * 84)) / resultMCDiamond) * 100
-    resultPDiamond = resultMCDiamond - (userACrow * 84)
+    resultPDiamond = resultMCDiamond - (userCrow * 84)
     resultPCrow = resultPDiamond / 84
+    resultPCTProfit = (resultPCrow / userACrow) * 100
 
     print("\nTrue CROW Amount to Spend:", userACrow)
     print("TEAR Token Amount:", math.floor(resultTear))
